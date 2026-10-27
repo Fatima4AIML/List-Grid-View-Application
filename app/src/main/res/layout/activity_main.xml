@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFDF5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to GridListApplication"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#174A8B"
+            android:gravity="center"
+            android:paddingTop="18dp"
+            android:paddingBottom="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etData"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:hint="Enter user data"
+                android:textColor="#000000"
+                android:textColorHint="#666666"
+                android:singleLine="true"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:backgroundTint="#174A8B" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginStart="10dp"
+                android:text="Add"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#174A8B" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Array 1 - ListView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#174A8B"
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#FFFFFF"
+            android:divider="#E2DCCF"
+            android:dividerHeight="1dp"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Array 2 - GridView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#174A8B"
+            android:paddingTop="24dp"
+            android:paddingBottom="10dp" />
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:numColumns="2"
+            android:verticalSpacing="8dp"
+            android:horizontalSpacing="8dp"
+            android:stretchMode="columnWidth"
+            android:background="#FFFFFF"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>
